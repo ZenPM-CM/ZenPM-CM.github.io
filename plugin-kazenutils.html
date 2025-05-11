@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KazenUtils Plugin - Kazen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="plugin-detail-page">
+    <header>
+        <div class="container">
+            <button id="menu-toggle" class="menu-icon" aria-label="Abrir menú">☰</button>
+            <div class="site-title">
+                <img src="descarga.jpg" alt="Kazen logo" class="header-logo">
+                <h1>Plugin: KazenUtils</h1>
+            </div>
+        </div>
+    </header>
+
+    <div id="nav-menu" class="nav-menu-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="youtube.html">YouTube</a></li>
+                <li><a href="plugins.html">Todos los Plugins</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="plugin-detail">
+            <div class="container">
+                <div class="plugin-header">
+                    <div class="plugin-image-container">
+                        <img src="cat_illustration.png" alt="KazenUtils Plugin" class="plugin-detail-image">
+                    </div>
+                    <div class="plugin-title">
+                        <h2>KazenUtils</h2>
+                        <div class="plugin-meta">
+                            <span class="plugin-version">Versión: 3.2.0</span>
+                            <span class="plugin-author">Autor: EucalyptusZenphar</span>
+                        </div>
+                        <a href="#" class="btn download-btn" download>Descargar Plugin</a>
+                    </div>
+                </div>
+
+                <div class="plugin-description">
+                    <h3>Descripción</h3>
+                    <p>
+                        KazenUtils es una colección de utilidades y herramientas diseñadas para facilitar la administración 
+                        del servidor y mejorar la experiencia de juego. Este plugin todo-en-uno contiene múltiples 
+                        funcionalidades que normalmente requerirían varios plugins diferentes.
+                    </p>
+
+                    <h3>Características</h3>
+                    <ul class="feature-list">
+                        <li>Sistema de teletransporte avanzado</li>
+                        <li>Gestión de inventarios virtuales</li>
+                        <li>Comandos de administración simplificados</li>
+                        <li>Sistema de mensajes privados mejorado</li>
+                        <li>Herramientas de moderación para el servidor</li>
+                        <li>Sistema de logs detallados</li>
+                        <li>Control de clima y tiempo</li>
+                        <li>Más de 50 comandos útiles para administradores y jugadores</li>
+                    </ul>
+
+                    <h3>Cómo usar</h3>
+                    <div class="usage-instructions">
+                        <h4>Instalación:</h4>
+                        <ol>
+                            <li>Descarga el archivo .phar del plugin</li>
+                            <li>Colócalo en la carpeta "plugins" de tu servidor</li>
+                            <li>Reinicia el servidor</li>
+                            <li>Edita el archivo de configuración según tus preferencias</li>
+                        </ol>
+
+                        <h4>Comandos principales:</h4>
+                        <div class="commands-table">
+                            <div class="command-row">
+                                <div class="command">/ku help</div>
+                                <div class="description">Muestra todos los comandos disponibles</div>
+                            </div>
+                            <div class="command-row">
+                                <div class="command">/warp [nombre]</div>
+                                <div class="description">Teletransporta al jugador a un warp específico</div>
+                            </div>
+                            <div class="command-row">
+                                <div class="command">/invsee [jugador]</div>
+                                <div class="description">Permite ver y editar el inventario de otro jugador</div>
+                            </div>
+                            <div class="command-row">
+                                <div class="command">/ku reload</div>
+                                <div class="description">Recarga la configuración del plugin</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Configuración</h3>
+                    <p>
+                        KazenUtils tiene un sistema de configuración modular. Puedes habilitar o deshabilitar 
+                        cada componente individualmente según las necesidades de tu servidor.
+                    </p>
+                    <pre class="config-example">
+# KazenUtils - Configuración principal
+modules:
+  teleport: true
+  inventory: true
+  moderation: true
+  chat: true
+  economy: false
+  weather: true
+
+permissions:
+  use-admin-commands: "kazenutils.admin"
+  bypass-cooldowns: "kazenutils.bypass"
+                    </pre>
+
+                    <h3>Soporte</h3>
+                    <p>
+                        Para recibir soporte sobre KazenUtils, puedes visitar mi canal de YouTube 
+                        o unirte a nuestro Discord donde hay una comunidad activa de usuarios.
+                    </p>
+                </div>
+
+                <div class="back-to-plugins">
+                    <a href="plugins.html" class="btn">Volver a todos los plugins</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kazen - ZenPM-CM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
