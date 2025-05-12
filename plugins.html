@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins - Kazen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="plugins-page">
+    <header>
+        <div class="container">
+            <button id="menu-toggle" class="menu-icon" aria-label="Abrir menú">☰</button>
+            <div class="site-title">
+                <img src="imagenes/descarga.jpg" alt="Kazen logo" class="header-logo">
+                <h1>Mis Plugins</h1>
+            </div>
+        </div>
+    </header>
+
+    <div id="nav-menu" class="nav-menu-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="youtube.html">YouTube</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="plugins-content">
+            <div class="container">
+                <h2>Explora mis Plugins</h2>
+                <p class="section-intro">Estos plugins son herramientas útiles que puedes descargar e instalar en tu servidor.</p>
+                
+                <div class="plugin-filters">
+                    <div class="search-filter">
+                        <input type="text" id="plugin-search" placeholder="Buscar plugin...">
+                    </div>
+                    <div class="category-filter">
+                        <label for="category-select">Categoría:</label>
+                        <select id="category-select">
+                            <option value="all">Todos</option>
+                            <option value="utility">Utilidades</option>
+                            <option value="economy">Economía</option>
+                            <option value="admin">Administración</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="plugin-grid">
+                    <!-- Plugin 1 -->
+                    <div class="plugin-card" data-category="utility">
+                        <div class="plugin-icon">
+                            <img src="imagenes/icono_plugin.png" alt="ItemDelivery Icon" class="plugin-image">
+                        </div>
+                        <h3>ItemDelivery</h3>
+                        <p>Facilita el intercambio de ítems entre jugadores en servidores Minecraft y Craftman.</p>
+                        <div class="plugin-dates">
+                            <span>Creado: 24/12/2024</span>
+                            <span>Finalizado: 24/12/2024</span>
+                        </div>
+                        <div class="plugin-actions">
+                            <a href="Plugins/ItemDelivery_ByEucalyptusZen.phar" class="btn download-btn" download>Descargar</a>
+                            <a href="plugin-itemdelivery.html" class="btn detail-btn">Detalles</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Plugin 2 -->
+                    <div class="plugin-card" data-category="admin">
+                        <div class="plugin-icon">
+                            <img src="imagenes/icono_plugin.png" alt="DiscordNotifier Icon" class="plugin-image">
+                        </div>
+                        <h3>DiscordNotifier</h3>
+                        <p>Recibe notificaciones en Discord sobre el estado de tu servidor.</p>
+                        <div class="plugin-dates">
+                            <span>Creado: 2/12/2024</span>
+                            <span>Finalizado: 2/12/2024</span>
+                        </div>
+                        <div class="plugin-actions">
+                            <a href="Plugins/DiscordNotifierCM_By_EucalyptusZen.phar" class="btn download-btn" download>Descargar</a>
+                            <a href="plugin-discordnotifier.html" class="btn detail-btn">Detalles</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Plugin 3 -->
+                    <div class="plugin-card" data-category="utility">
+                        <div class="plugin-icon">
+                            <img src="imagenes/icono_plugin.png" alt="CohereIA Icon" class="plugin-image">
+                        </div>
+                        <h3>CohereIA</h3>
+                        <p>Interactúa con una IA avanzada directamente desde el juego.</p>
+                        <div class="plugin-dates">
+                            <span>Creado: 28/11/2024</span>
+                            <span>Finalizado: 28/11/2024</span>
+                        </div>
+                        <div class="plugin-actions">
+                            <a href="Plugins/CohereIA_By_EucalyptusZen.zip" class="btn download-btn" download>Descargar</a>
+                            <a href="plugin-cohereia.html" class="btn detail-btn">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kazen - ZenPM-CM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
